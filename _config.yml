@@ -20,6 +20,7 @@ linkedin_username: "emilytran-"
 #########################################################################################
 theme: "minima"
 
+# Since you are removing the RSS, you may not need an rss key.
 # rss: rss
 
 kramdown:
@@ -27,7 +28,6 @@ kramdown:
     disable: true
     
 plugins:
-  - jekyll-feed
   - jekyll-sitemap
 
 titles_from_headings:
