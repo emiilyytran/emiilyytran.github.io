@@ -1,1 +1,4 @@
-hi! i'm emily and welcome to my page.
+---
+layout: home
+list_title: posts
+---
