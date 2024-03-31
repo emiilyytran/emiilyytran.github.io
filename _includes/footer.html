@@ -1,22 +1,9 @@
 <footer class="site-footer h-card">
-  <div class="wrapper footer-content-centered">
-    <div class="footer-col-wrapper">
-      {%- if site.author %}
-        <ul class="contact-list">
-          {% if site.author.name -%}
-            <li class="p-name">{{ site.author.name | escape }}</li>
-          {% endif -%}
-          {% if site.author.email -%}
-            <li><a class="u-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
-          {%- endif %}
-        </ul>
-      {%- endif %}
-    </div>
-    <div class="footer-col footer-content-centered">
-      <p>{{ site.description | escape }}</p>
-    </div>
-    <div class="social-links footer-content-centered">
-      {%- include social.html -%}
+  <div class="wrapper">
+    <p class="site-description">{{ site.description | escape }}</p>
+    <div class="social-links">
+      <a href="{{ site.github_url }}" class="social-link github">GitHub</a>
+      <a href="{{ site.linkedin_url }}" class="social-link linkedin">LinkedIn</a>
     </div>
   </div>
 </footer>
