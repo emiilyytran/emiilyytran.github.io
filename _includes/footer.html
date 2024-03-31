@@ -1,7 +1,5 @@
 <footer class="site-footer h-card">
-
-  <div class="wrapper">
-
+  <div class="wrapper footer-content-centered">
     <div class="footer-col-wrapper">
       {%- if site.author %}
         <ul class="contact-list">
@@ -13,16 +11,12 @@
           {%- endif %}
         </ul>
       {%- endif %}
-      </div>
-      <div class="footer-col">
-        <p>{{ site.description | escape }}</p>
-      </div>
     </div>
-
-    <div class="social-links">
+    <div class="footer-col footer-content-centered">
+      <p>{{ site.description | escape }}</p>
+    </div>
+    <div class="social-links footer-content-centered">
       {%- include social.html -%}
     </div>
-
   </div>
-
 </footer>
